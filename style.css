@@ -3,7 +3,7 @@ body {
     width: 100vw;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 6fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -51,4 +51,92 @@ body {
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+}
+
+.header-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    padding-left: 30px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);    
+}
+
+.searchbar-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchbar {
+    background-color: rgb(225,231,238);
+    border-style: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 600px;
+}
+
+.searchbar-container > svg, .bell-ring-outline {
+    height: 20px;
+    width: 20px;
+}
+
+.user-image-small, .user-image-large {
+    background-color: yellow;
+    border-radius: 50%;  
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+    justify-content: center;
+    
+}
+
+.user-image-small {
+    height: 40px;
+    width: 40px; 
+}
+
+.greeting-container {
+    display: grid;
+    grid-template-columns: 60px 360px;
+    grid-template-rows: 60px;
+    gap: 20px;
+}
+
+.user-image-large {
+    height: 60px;
+    width: 60px; 
+}
+
+.salutation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.salutation-subject {
+    font-size: 20px;
+}
+
+.editing-container {
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    grid-template-rows: 60px;
+    gap: 20px;
+    align-items: center;
+}
+
+.editing-container button {
+    color: white;
+    background-color: rgb(28,147,210);
+    border-style: none;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 7px 0px 7px 0px;
 }
